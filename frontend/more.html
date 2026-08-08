@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>More — Class Management</title>
+<link rel="icon" href="assets/svg/icons.svg#icon-sparkle" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="bg-orbs"></div>
+<div id="loading-screen">
+  <div class="loader-mark"><svg><use href="assets/svg/icons.svg#icon-sparkle"></use></svg></div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="app-shell page-grid page-grid--main-side">
+  <div id="tabbar-root"></div>
+
+  <main class="stack stagger">
+    <div id="topbar-root" class="topbar"></div>
+    <h1 class="text-display text-xl">More</h1>
+
+    <a href="profile.html" class="glass card clickable row" style="gap:14px; text-decoration:none; color:inherit">
+      <span id="more-avatar"></span>
+      <div style="flex:1; min-width:0">
+        <p class="font-semibold" id="more-name">Loading…</p>
+        <p class="text-sm text-muted" id="more-role">—</p>
+      </div>
+      <svg class="icon text-soft"><use href="assets/svg/icons.svg#icon-chevron-right"></use></svg>
+    </a>
+
+    <section class="grid-2 sm:grid-2" id="more-grid" style="grid-template-columns:1fr 1fr">
+      <a href="cleaning.html" class="glass card clickable stack" style="gap:10px; text-decoration:none; color:inherit">
+        <span class="status-chip__dot" style="background:var(--blue-500);width:44px;height:44px"><svg class="icon"><use href="assets/svg/icons.svg#icon-broom"></use></svg></span>
+        <span class="font-semibold text-sm">Cleaning Duty</span>
+      </a>
+      <a href="announcement.html" class="glass card clickable stack" style="gap:10px; text-decoration:none; color:inherit">
+        <span class="status-chip__dot" style="background:var(--info);width:44px;height:44px"><svg class="icon"><use href="assets/svg/icons.svg#icon-megaphone"></use></svg></span>
+        <span class="font-semibold text-sm">Announcements</span>
+      </a>
+      <a href="profile.html" class="glass card clickable stack" style="gap:10px; text-decoration:none; color:inherit">
+        <span class="status-chip__dot" style="background:var(--status-permission);width:44px;height:44px"><svg class="icon"><use href="assets/svg/icons.svg#icon-user"></use></svg></span>
+        <span class="font-semibold text-sm">Profile</span>
+      </a>
+      <a href="admin.html" class="glass card clickable stack hidden" id="more-admin-link" style="gap:10px; text-decoration:none; color:inherit">
+        <span class="status-chip__dot" style="background:var(--ink-900);width:44px;height:44px"><svg class="icon"><use href="assets/svg/icons.svg#icon-shield"></use></svg></span>
+        <span class="font-semibold text-sm">Admin Panel</span>
+      </a>
+    </section>
+
+    <button class="btn btn--glass btn--block" id="more-logout" style="color:var(--danger)">
+      <svg><use href="assets/svg/icons.svg#icon-logout"></use></svg> Log Out
+    </button>
+  </main>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+(async function () {
+  if (!App.guard()) return;
+  await App.renderShell('more');
+  const user = Auth.getUser();
+  document.getElementById('more-avatar').innerHTML = App.avatarHtml(user, 'md');
+  document.getElementById('more-name').textContent = user.fullName;
+  document.getElementById('more-role').textContent = user.role === 'admin' ? 'Administrator' : 'Student';
+  if (Auth.isAdmin()) document.getElementById('more-admin-link').classList.remove('hidden');
+  document.getElementById('more-logout').addEventListener('click', () => {
+    if (confirm('Log out of your account?')) Auth.logout();
+  });
+  App.hideLoadingScreen();
+})();
+</script>
+</body>
+</html>

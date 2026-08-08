@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Class Management &amp; Attendance System</title>
+<link rel="icon" href="assets/svg/icons.svg#icon-sparkle" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="bg-orbs"></div>
+<div id="loading-screen">
+  <div class="loader-mark"><svg><use href="assets/svg/icons.svg#icon-sparkle"></use></svg></div>
+  <div class="loader-bar"></div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script>
+  window.location.replace(Auth.isLoggedIn() ? (Auth.isAdmin() ? 'admin.html' : 'dashboard.html') : 'login.html');
+</script>
+</body>
+</html>

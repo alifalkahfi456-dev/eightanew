@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign In — Class Management</title>
+<link rel="icon" href="assets/svg/icons.svg#icon-sparkle" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="bg-orbs"></div>
+<div id="loading-screen">
+  <div class="loader-mark"><svg><use href="assets/svg/icons.svg#icon-sparkle"></use></svg></div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="auth-shell page-enter">
+  <div class="auth-card glass">
+    <div class="auth-mark"><svg><use href="assets/svg/icons.svg#icon-sparkle"></use></svg></div>
+    <h1 class="auth-title text-display">Welcome back</h1>
+    <p class="auth-sub">Sign in to view your attendance, homework and more.</p>
+
+    <form id="login-form" class="stack" novalidate>
+      <div class="field" id="field-name">
+        <label for="login-name">Full Name</label>
+        <div class="input-shell">
+          <svg><use href="assets/svg/icons.svg#icon-user"></use></svg>
+          <input id="login-name" type="text" placeholder="e.g. Jane Doe" autocomplete="name" required>
+        </div>
+        <span class="field-error"></span>
+      </div>
+
+      <div class="field" id="field-password">
+        <label for="login-password">Password</label>
+        <div class="input-shell">
+          <svg><use href="assets/svg/icons.svg#icon-lock"></use></svg>
+          <input id="login-password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+          <button type="button" class="eye-toggle" onclick="togglePasswordField('login-password', this)" aria-label="Show password">
+            <svg class="icon-sm"><use href="assets/svg/icons.svg#icon-eye"></use></svg>
+          </button>
+        </div>
+        <span class="field-error"></span>
+      </div>
+
+      <label class="row" style="gap:8px; cursor:pointer; padding:2px 0 4px;">
+        <input type="checkbox" id="login-remember" style="width:17px;height:17px;accent-color:var(--blue-500)">
+        <span class="text-sm text-muted font-semibold">Remember me on this device</span>
+      </label>
+
+      <button type="submit" id="login-submit" class="btn btn--primary btn--block">
+        <svg><use href="assets/svg/icons.svg#icon-chevron-right"></use></svg>
+        Sign In
+      </button>
+    </form>
+
+    <p class="auth-footer">Don't have an account? <a href="register.html">Create one</a></p>
+  </div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/auth.js"></script>
+<script>initLoginPage();</script>
+</body>
+</html>
