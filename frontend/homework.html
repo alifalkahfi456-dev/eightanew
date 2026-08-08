@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Homework — Class Management</title>
+<link rel="icon" href="assets/svg/icons.svg#icon-sparkle" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="bg-orbs"></div>
+<div id="loading-screen">
+  <div class="loader-mark"><svg><use href="assets/svg/icons.svg#icon-sparkle"></use></svg></div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="app-shell page-grid page-grid--main-side">
+  <div id="tabbar-root"></div>
+
+  <main class="stack stagger">
+    <div id="topbar-root" class="topbar"></div>
+    <h1 class="text-display text-xl">Homework</h1>
+
+    <section class="glass card--tight glass-strong" style="padding:14px">
+      <div class="search-bar">
+        <svg><use href="assets/svg/icons.svg#icon-search"></use></svg>
+        <input id="hw-search" type="text" placeholder="Search homework by title, subject or teacher…">
+      </div>
+    </section>
+
+    <section class="row row--wrap" id="hw-status-pills" style="gap:8px"></section>
+
+    <section id="hw-list" class="stack"></section>
+  </main>
+</div>
+
+<button class="fab" id="fab-add-homework" aria-label="Add homework">
+  <svg><use href="assets/svg/icons.svg#icon-plus"></use></svg>
+</button>
+
+<!-- Create/Edit homework modal (admin) -->
+<div class="modal-overlay" id="modal-homework">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-header">
+      <h3 id="hw-modal-title">New Homework</h3>
+      <button class="icon-btn" data-close-modal><svg class="icon-sm"><use href="assets/svg/icons.svg#icon-x"></use></svg></button>
+    </div>
+    <form id="homework-form" class="stack">
+      <input type="hidden" id="hw-id">
+      <div class="grid-2">
+        <div class="field">
+          <label for="hw-subject">Subject</label>
+          <div class="input-shell"><input id="hw-subject" type="text" placeholder="Mathematics" required></div>
+        </div>
+        <div class="field">
+          <label for="hw-teacher">Teacher</label>
+          <div class="input-shell"><input id="hw-teacher" type="text" placeholder="Mr. Smith" required></div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="hw-title">Title</label>
+        <div class="input-shell"><input id="hw-title" type="text" placeholder="Algebra Worksheet" required></div>
+      </div>
+      <div class="field">
+        <label for="hw-description">Description</label>
+        <textarea id="hw-description" class="input-area" placeholder="Describe what students need to do…" required></textarea>
+      </div>
+      <div class="field">
+        <label for="hw-deadline">Deadline</label>
+        <div class="input-shell"><input id="hw-deadline" type="datetime-local" required></div>
+      </div>
+      <div class="field">
+        <label>Attachment (optional)</label>
+        <div class="row" style="gap:10px">
+          <label class="btn btn--glass btn--sm" style="cursor:pointer">
+            <svg><use href="assets/svg/icons.svg#icon-upload"></use></svg> Choose File
+            <input type="file" id="hw-attachment-input" class="hidden">
+          </label>
+          <span id="hw-attachment-name" class="text-sm text-muted">No file selected</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn--glass" data-close-modal>Cancel</button>
+        <button type="submit" class="btn btn--primary" id="hw-submit-btn">Save Homework</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/homework.js"></script>
+</body>
+</html>

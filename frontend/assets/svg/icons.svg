@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <defs>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3.5 11.5 12 4l8.5 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M5.5 10v8.5a1 1 0 0 0 1 1H9.5a.5.5 0 0 0 .5-.5V15a2 2 0 0 1 4 0v4a.5.5 0 0 0 .5.5h3a1 1 0 0 0 1-1V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8 3v4M16 3v4M3.5 9.5h17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="m8 14 2.3 2.3L16 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 5.5c0-1 .8-1.5 1.8-1.5H11a1 1 0 0 1 1 1v14.5a.7.7 0 0 1-1.05.6C9.7 19.3 7.7 18.5 5.6 18.5A1.6 1.6 0 0 1 4 17V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M20 5.5c0-1-.8-1.5-1.8-1.5H13a1 1 0 0 0-1 1v14.5a.7.7 0 0 0 1.05.6c1.25-.8 3.25-1.6 5.35-1.6a1.6 1.6 0 0 0 1.6-1.5V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-broom" viewBox="0 0 24 24"><path d="m14 4-8.5 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M13 3.2 20.8 11a1.4 1.4 0 0 1 0 2L18 15.8a1.4 1.4 0 0 1-2 0l-7.8-7.8a2 2 0 0 1 0-2.8l2-2a2 2 0 0 1 2.8 0Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M8 14 3.5 18.5c-.8.8-.8 1.5 0 2 .6.4 3-.3 4-1l3.3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-megaphone" viewBox="0 0 24 24"><path d="M3.5 10.2v3.6c0 .9.7 1.6 1.6 1.6h1.1l1.2 4a1 1 0 0 0 1 .7h1a1 1 0 0 0 1-1.3l-1-3.4H12L18 19V5l-6 3.8H5.1a1.6 1.6 0 0 0-1.6 1.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M20.5 9.5a3.5 3.5 0 0 1 0 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M4.8 19.5c1-3.4 4-5 7.2-5s6.2 1.6 7.2 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M3.3 19c.8-3 3.1-4.6 5.7-4.6s4.9 1.6 5.7 4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M15.3 5.3a3.2 3.2 0 0 1 0 6.2M17.8 14.7c2 .5 3.5 1.9 4.1 4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3.3 19.5 6v5.6c0 4.6-3.2 7.7-7.5 9.1-4.3-1.4-7.5-4.5-7.5-9.1V6L12 3.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="m8.7 12.3 2.3 2.3 4.3-4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M6 10.5a6 6 0 0 1 12 0c0 4 1.3 5.3 1.7 5.8.3.3.1.9-.4.9H4.7c-.5 0-.7-.6-.4-.9.4-.5 1.7-1.8 1.7-5.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M9.5 19.8a2.6 2.6 0 0 0 5 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="m19.5 19.5-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-filter" viewBox="0 0 24 24"><path d="M4 5.5h16L14.5 13v5.3L9.5 20V13L4 5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-edit" viewBox="0 0 24 24"><path d="M15.7 4.3a1.8 1.8 0 0 1 2.5 0l1.5 1.5a1.8 1.8 0 0 1 0 2.5L8.5 19.5 4 20.5l1-4.5L15.7 4.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M5 7h14M9.5 7V5.3c0-.5.4-.8.9-.8h3.2c.5 0 .9.3.9.8V7M6.5 7l.7 12a1.6 1.6 0 0 0 1.6 1.5h6.4a1.6 1.6 0 0 0 1.6-1.5l.7-12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="m8.3 12.3 2.6 2.6 4.8-5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3.5 21.5 20h-19L12 3.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M12 10v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></symbol>
+
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></symbol>
+
+    <symbol id="icon-x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="m9.2 9.2 5.6 5.6M14.8 9.2l-5.6 5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 15.5V4M8 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M4.5 15v3.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 8.5A1.6 1.6 0 0 1 5.6 7h2L8.6 5h6.8l1 2h2A1.6 1.6 0 0 1 20 8.5v9A1.6 1.6 0 0 1 18.4 19H5.6A1.6 1.6 0 0 1 4 17.5v-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.8" fill="none"/></symbol>
+
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M7.5 10.5V7.8a4.5 4.5 0 0 1 9 0v2.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.8" fill="none"/></symbol>
+
+    <symbol id="icon-eye-off" viewBox="0 0 24 24"><path d="M3.5 3.5l17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M9.9 6.2A10.4 10.4 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a15.6 15.6 0 0 1-3.3 4M6.6 7.7C4 9.4 2.5 12 2.5 12s3.5 6.5 9.5 6.5a9.6 9.6 0 0 0 3.2-.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M14.3 14.3a2.6 2.6 0 0 1-3.6-3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-logout" viewBox="0 0 24 24"><path d="M9 20H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M16 15.5 20.5 12 16 8.5M20 12H9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 4v11.5M8 12l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M4.5 16v2.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-print" viewBox="0 0 24 24"><path d="M6.5 9V4.5h11V9" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><rect x="4" y="9" width="16" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M6.5 15v4.5h11V15" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 3.5c2.5 0 4.5 2 4.5 4.5 0 3.3-4.5 8.5-4.5 8.5S7.5 11.3 7.5 8c0-2.5 2-4.5 4.5-4.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><circle cx="12" cy="8" r="1.6" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8.5 19.5h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M19.4 13.5a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.9 2.9l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.9-2.9l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H4a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.9-2.9l.1.1a1.7 1.7 0 0 0 1.9.3H10a1.7 1.7 0 0 0 1-1.6V4a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.9 2.9l-.1.1a1.7 1.7 0 0 0-.3 1.9V10a1.7 1.7 0 0 0 1.6 1h.2a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.6 1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 0 1 12.6-5.5M19.5 12a7.5 7.5 0 0 1-12.6 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M17 3.5v3.5h-3.5M7 20.5V17h3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-paperclip" viewBox="0 0 24 24"><path d="M17 8.5 9.4 16.1a3 3 0 0 1-4.2-4.2l8.1-8.1a2 2 0 0 1 2.8 2.8l-7.7 7.7a1 1 0 0 1-1.4-1.4l6.9-6.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="9" cy="10" r="1.6" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="m5 17.5 4.5-4.5 3 3 3.5-4.5 4 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-flag" viewBox="0 0 24 24"><path d="M6 20.5V4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M6 4.5h11l-2.5 4L17 12.5H6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/></symbol>
+
+    <symbol id="icon-wifi-off" viewBox="0 0 24 24"><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M8.5 16.3a5 5 0 0 1 6.3-.2M5.3 12.9a10 10 0 0 1 3.6-2.3M18.7 12.9a10 10 0 0 0-2.6-2.1M2 8.8a15 15 0 0 1 4-2.6M15.5 6.3A15 15 0 0 1 22 8.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><circle cx="12" cy="19.5" r="1.1" fill="currentColor" stroke="none"/></symbol>
+
+    <symbol id="icon-empty" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="2.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M4 11h16M8 4.5v4M16 4.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M9 15.5h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></symbol>
+
+    <symbol id="icon-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.8" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.8" fill="currentColor" stroke="none"/></symbol>
+
+    <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><rect x="13" y="4" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><rect x="4" y="13" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><rect x="13" y="13" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/></symbol>
+
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="M12 3.5c.5 3.2 1.8 4.5 5 5-3.2.5-4.5 1.8-5 5-.5-3.2-1.8-4.5-5-5 3.2-.5 4.5-1.8 5-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M18.5 15c.3 1.6.9 2.2 2.5 2.5-1.6.3-2.2.9-2.5 2.5-.3-1.6-.9-2.2-2.5-2.5 1.6-.3 2.2-.9 2.5-2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" fill="none"/></symbol>
+  </defs>
+</svg>

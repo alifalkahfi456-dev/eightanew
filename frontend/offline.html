@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You're Offline — Class Management</title>
+<link rel="icon" href="assets/svg/icons.svg#icon-sparkle" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="bg-orbs"></div>
+<div class="error-shell page-enter">
+  <div class="glass card" style="padding:48px 32px; max-width:420px">
+    <div class="empty-state__icon" style="width:76px;height:76px;margin:0 auto 18px">
+      <svg class="icon-lg"><use href="assets/svg/icons.svg#icon-wifi-off"></use></svg>
+    </div>
+    <h1 class="text-display text-xl">You're Offline</h1>
+    <p class="text-muted text-sm" style="margin-top:10px">Check your internet connection. We'll reconnect automatically once you're back online.</p>
+    <button onclick="location.reload()" class="btn btn--primary btn--block" style="margin-top:24px">
+      <svg><use href="assets/svg/icons.svg#icon-refresh"></use></svg> Retry
+    </button>
+  </div>
+</div>
+<script>
+  window.addEventListener('online', () => location.reload());
+</script>
+</body>
+</html>

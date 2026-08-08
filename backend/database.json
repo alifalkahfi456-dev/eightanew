@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "6056fc3a-3dca-4bc7-8189-2e2e322be0e3",
+      "fullName": "Alif",
+      "passwordHash": "$2a$10$F5q8olAv.doeduD0B6Y.We2oyhU3OOVMFKcTBrN6BsEZneqaq4mYm",
+      "role": "admin",
+      "avatar": "",
+      "disabled": false,
+      "createdAt": "2026-08-08T04:53:12.045Z"
+    }
+  ],
+  "attendance": [],
+  "homework": [],
+  "schedules": [],
+  "cleaningDuty": [],
+  "announcements": [],
+  "settings": {
+    "schoolName": "MTSN 1 TANGGAMUS",
+    "className": "Class 8 - A",
+    "logo": "",
+    "theme": "blue",
+    "attendanceTime": "07:30",
+    "attendanceCloseTime": "08:00"
+  },
+  "meta": {
+    "createdAt": "2026-08-08T04:53:11.936Z",
+    "version": 1
+  }
+}

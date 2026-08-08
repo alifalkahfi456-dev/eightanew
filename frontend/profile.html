@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Profile — Class Management</title>
+<link rel="icon" href="assets/svg/icons.svg#icon-sparkle" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="bg-orbs"></div>
+<div id="loading-screen">
+  <div class="loader-mark"><svg><use href="assets/svg/icons.svg#icon-sparkle"></use></svg></div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="app-shell page-grid page-grid--main-side">
+  <div id="tabbar-root"></div>
+
+  <main class="stack stagger">
+    <div id="topbar-root" class="topbar"></div>
+    <div class="row row--between">
+      <h1 class="text-display text-xl">Profile</h1>
+      <a href="more.html" class="icon-btn" aria-label="Back"><svg class="icon-sm"><use href="assets/svg/icons.svg#icon-arrow-left"></use></svg></a>
+    </div>
+
+    <section class="glass card" style="text-align:center; padding:32px 20px">
+      <div style="position:relative; width:fit-content; margin:0 auto">
+        <span id="profile-avatar"></span>
+        <label class="icon-btn" style="position:absolute; bottom:-4px; right:-4px; width:34px; height:34px; cursor:pointer">
+          <svg class="icon-sm"><use href="assets/svg/icons.svg#icon-camera"></use></svg>
+          <input type="file" id="avatar-input" accept="image/*" class="hidden">
+        </label>
+      </div>
+      <h2 class="text-display" style="margin-top:14px; font-size:19px" id="profile-name">Loading…</h2>
+      <p class="text-sm text-muted" id="profile-role" style="margin-top:2px">—</p>
+    </section>
+
+    <section class="scroll-x" id="profile-stats"></section>
+
+    <section class="glass card">
+      <h3 class="card-title" style="margin-bottom:14px">Edit Name</h3>
+      <form id="name-form" class="row" style="gap:10px">
+        <div class="input-shell" style="flex:1">
+          <svg><use href="assets/svg/icons.svg#icon-user"></use></svg>
+          <input id="profile-name-input" type="text" required>
+        </div>
+        <button type="submit" class="btn btn--primary btn--icon-only" aria-label="Save name">
+          <svg><use href="assets/svg/icons.svg#icon-check"></use></svg>
+        </button>
+      </form>
+    </section>
+
+    <section class="glass card">
+      <h3 class="card-title" style="margin-bottom:14px">Change Password</h3>
+      <form id="password-form" class="stack">
+        <div class="field">
+          <label for="current-password">Current Password</label>
+          <div class="input-shell">
+            <svg><use href="assets/svg/icons.svg#icon-lock"></use></svg>
+            <input id="current-password" type="password" required>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="new-password">New Password</label>
+            <div class="input-shell">
+              <svg><use href="assets/svg/icons.svg#icon-lock"></use></svg>
+              <input id="new-password" type="password" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="confirm-new-password">Confirm</label>
+            <div class="input-shell">
+              <svg><use href="assets/svg/icons.svg#icon-lock"></use></svg>
+              <input id="confirm-new-password" type="password" required>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Update Password</button>
+      </form>
+    </section>
+
+    <button class="btn btn--glass btn--block" id="profile-logout" style="color:var(--danger)">
+      <svg><use href="assets/svg/icons.svg#icon-logout"></use></svg> Log Out
+    </button>
+  </main>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/profile.js"></script>
+</body>
+</html>
